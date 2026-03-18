@@ -14,6 +14,15 @@
   box-shadow: 0 2px 16px rgba(32, 103, 158, 0.07);
 }
 
+.nav-main .nav-logo {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
 .nav-main .nav-logo img {
   height: 120px;
   width: auto;
@@ -21,6 +30,7 @@
   border-radius: 12px;
   padding: 6px 12px;
   mix-blend-mode: multiply;
+  display: block;
 }
 
 .nav-main .nav-links {
