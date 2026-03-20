@@ -1,0 +1,59 @@
+<svg viewBox="0 0 280 52" xmlns="http://www.w3.org/2000/svg">
+  <!-- Diamante izquierdo: azul -->
+  <polygon points="6,4 26,4 16,22" fill="#20679e"/>
+  <!-- Diamante derecho: teal -->
+  <polygon points="26,4 46,4 36,22" fill="#20c5b5"/>
+  <!-- Diamante inferior: teal oscuro -->
+  <polygon points="16,22 36,22 26,38" fill="#1aada0"/>
+
+  <!-- Nodo central blanco con núcleo teal — reemplaza el rect blanco -->
+  <circle cx="26" cy="22" r="6" fill="rgba(255,255,255,0.95)"/>
+  <circle cx="26" cy="22" r="3" fill="#20c5b5"/>
+
+  <!-- Vértices pequeños -->
+  <circle cx="6"  cy="4"  r="2" fill="#20679e"/>
+  <circle cx="46" cy="4"  r="2" fill="#20c5b5"/>
+  <circle cx="26" cy="38" r="2" fill="#1aada0"/>
+
+  <!-- VICTORIA — usando font-size grande y dominant-baseline para consistencia cross-browser -->
+  <text x="58" y="20"
+    font-family="Arial Black, Arial, Helvetica, sans-serif"
+    font-weight="900"
+    font-size="17"
+    fill="#1a2e45"
+    dominant-baseline="auto"
+    letter-spacing="1">VICTORIA</text>
+
+  <!-- Línea degradada: azul → teal -->
+  <rect x="58"  y="24" width="46" height="2" fill="#20679e"/>
+  <rect x="104" y="24" width="46" height="2" fill="#1aada0"/>
+  <rect x="150" y="24" width="30" height="2" fill="#20c5b5"/>
+
+  <!-- PATARROYO -->
+  <text x="59" y="39"
+    font-family="Arial, Helvetica, sans-serif"
+    font-weight="400"
+    font-size="10.5"
+    fill="#20679e"
+    dominant-baseline="auto"
+    letter-spacing="2.5">PATARROYO</text>
+
+  <!-- Separador vertical -->
+  <rect x="188" y="10" width="1" height="30" fill="#d1dce8" opacity="0.8"/>
+
+  <!-- fullstack developer -->
+  <text x="196" y="22"
+    font-family="Arial, Helvetica, sans-serif"
+    font-weight="400"
+    font-size="8.5"
+    fill="#6b7c93"
+    dominant-baseline="auto"
+    letter-spacing="0.5">fullstack</text>
+  <text x="196" y="35"
+    font-family="Arial, Helvetica, sans-serif"
+    font-weight="400"
+    font-size="8.5"
+    fill="#6b7c93"
+    dominant-baseline="auto"
+    letter-spacing="0.5">developer</text>
+</svg>

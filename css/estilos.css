@@ -24,7 +24,8 @@
 }
 
 /* SVG logos navbar */
-.nav-logo-svg {
+.nav-logo-desktop,
+.nav-logo-mobile {
   display: block;
   transition: opacity 0.2s;
 }
@@ -35,12 +36,13 @@
   width: auto;
 }
 
-/* Móvil: logo compacto — oculto por defecto */
+/* Móvil: oculto por defecto en desktop */
 .nav-logo-mobile {
   display: none;
 }
 
-.nav-main .nav-logo:hover .nav-logo-svg {
+.nav-main .nav-logo:hover .nav-logo-desktop,
+.nav-main .nav-logo:hover .nav-logo-mobile {
   opacity: 0.82;
 }
 
