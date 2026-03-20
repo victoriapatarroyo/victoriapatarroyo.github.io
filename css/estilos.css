@@ -23,16 +23,35 @@
   outline: none;
 }
 
-/* Logo navbar */
-.nav-logo-img {
+/* Logo navbar — SVG inline */
+.nav-logo-svg {
   height: 48px;
   width: auto;
   display: block;
   transition: opacity 0.2s;
 }
 
-.nav-main .nav-logo:hover .nav-logo-img {
+.nav-main .nav-logo:hover .nav-logo-svg {
   opacity: 0.82;
+}
+
+/* En móvil: ocultar texto y tag, solo queda el diamante + nombre compacto */
+@media (max-width: 768px) {
+  .nav-logo-svg {
+    height: 40px;
+  }
+  .nav-text-tag {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  .nav-logo-svg {
+    height: 44px;
+  }
+  .nav-text-tag {
+    display: none;
+  }
 }
 
 .nav-main .nav-links {
@@ -582,7 +601,7 @@
     z-index: 1000;
   }
 
-  .nav-logo-img {
+  .nav-logo-svg {
     height: 40px;
   }
 
@@ -642,7 +661,7 @@
     padding: 12px 24px;
   }
 
-  .nav-logo-img {
+  .nav-logo-svg {
     height: 44px;
   }
 
