@@ -395,7 +395,7 @@
 .footer-main {
   background: linear-gradient(135deg, #1a2e45 0%, #20679e 100%);
   color: #fff;
-  padding: 60px 0 0;
+  padding: 40px 0 0;
   position: relative;
   overflow: hidden;
 }
@@ -493,14 +493,14 @@
 
 .footer-divider {
   border-color: rgba(255, 255, 255, 0.12);
-  margin: 40px 0 0;
+  margin: 20px 0 0;
 }
 
 .footer-copyright {
   font-size: 0.82rem;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
-  padding: 18px 0;
+  padding: 14px 0 18px;
 }
 
 .footer-name-highlight {
