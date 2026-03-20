@@ -23,24 +23,11 @@
   outline: none;
 }
 
-/* Logo navbar — tamaños responsivos */
-.nav-logo-desk,
-.nav-logo-mob {
-  transition: opacity 0.2s;
-}
-
-.nav-logo-desk {
-  height: 44px;
-  width: auto;
-}
-.nav-logo-mob {
-  height: 48px;
-  width: auto;
-}
-
+/* Logo navbar — hover */
 .nav-main .nav-logo:hover .nav-logo-desk,
 .nav-main .nav-logo:hover .nav-logo-mob {
   opacity: 0.82;
+  transition: opacity 0.2s;
 }
 
 .nav-main .nav-links {
