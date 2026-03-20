@@ -1,59 +1,46 @@
-<svg viewBox="0 0 280 52" xmlns="http://www.w3.org/2000/svg">
-  <!-- Diamante izquierdo: azul -->
-  <polygon points="6,4 26,4 16,22" fill="#20679e"/>
-  <!-- Diamante derecho: teal -->
-  <polygon points="26,4 46,4 36,22" fill="#20c5b5"/>
-  <!-- Diamante inferior: teal oscuro -->
-  <polygon points="16,22 36,22 26,38" fill="#1aada0"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 52" role="img" aria-label="Victoria Patarroyo Fullstack Developer">
+  <style>
+    .logo-desktop { display: block; }
+    .logo-mobile  { display: none;  }
+    @media (max-width: 768px) {
+      .logo-desktop { display: none;  }
+      .logo-mobile  { display: block; }
+    }
+  </style>
 
-  <!-- Nodo central blanco con núcleo teal — reemplaza el rect blanco -->
-  <circle cx="26" cy="22" r="6" fill="rgba(255,255,255,0.95)"/>
-  <circle cx="26" cy="22" r="3" fill="#20c5b5"/>
+  <!-- DESKTOP: símbolo + texto horizontal -->
+  <g class="logo-desktop">
+    <polygon points="6,4 26,4 16,22"   fill="#20679e"/>
+    <polygon points="26,4 46,4 36,22"  fill="#20c5b5"/>
+    <polygon points="16,22 36,22 26,38" fill="#1aada0"/>
+    <circle cx="26" cy="22" r="6" fill="#ffffff"/>
+    <circle cx="26" cy="22" r="3" fill="#20c5b5"/>
+    <circle cx="6"  cy="4"  r="2" fill="#20679e"/>
+    <circle cx="46" cy="4"  r="2" fill="#20c5b5"/>
+    <circle cx="26" cy="38" r="2" fill="#1aada0"/>
+    <text x="58" y="21" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="17" fill="#1a2e45" letter-spacing="1">VICTORIA</text>
+    <rect x="58"  y="25" width="46" height="2" fill="#20679e"/>
+    <rect x="104" y="25" width="46" height="2" fill="#1aada0"/>
+    <rect x="150" y="25" width="28" height="2" fill="#20c5b5"/>
+    <text x="59" y="39" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="10.5" fill="#20679e" letter-spacing="2.5">PATARROYO</text>
+    <rect x="190" y="12" width="1" height="28" fill="#d1dce8"/>
+    <text x="198" y="24" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="8.5" fill="#6b7c93" letter-spacing="0.5">fullstack</text>
+    <text x="198" y="36" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="8.5" fill="#6b7c93" letter-spacing="0.5">developer</text>
+  </g>
 
-  <!-- Vértices pequeños -->
-  <circle cx="6"  cy="4"  r="2" fill="#20679e"/>
-  <circle cx="46" cy="4"  r="2" fill="#20c5b5"/>
-  <circle cx="26" cy="38" r="2" fill="#1aada0"/>
-
-  <!-- VICTORIA — usando font-size grande y dominant-baseline para consistencia cross-browser -->
-  <text x="58" y="20"
-    font-family="Arial Black, Arial, Helvetica, sans-serif"
-    font-weight="900"
-    font-size="17"
-    fill="#1a2e45"
-    dominant-baseline="auto"
-    letter-spacing="1">VICTORIA</text>
-
-  <!-- Línea degradada: azul → teal -->
-  <rect x="58"  y="24" width="46" height="2" fill="#20679e"/>
-  <rect x="104" y="24" width="46" height="2" fill="#1aada0"/>
-  <rect x="150" y="24" width="30" height="2" fill="#20c5b5"/>
-
-  <!-- PATARROYO -->
-  <text x="59" y="39"
-    font-family="Arial, Helvetica, sans-serif"
-    font-weight="400"
-    font-size="10.5"
-    fill="#20679e"
-    dominant-baseline="auto"
-    letter-spacing="2.5">PATARROYO</text>
-
-  <!-- Separador vertical -->
-  <rect x="188" y="10" width="1" height="30" fill="#d1dce8" opacity="0.8"/>
-
-  <!-- fullstack developer -->
-  <text x="196" y="22"
-    font-family="Arial, Helvetica, sans-serif"
-    font-weight="400"
-    font-size="8.5"
-    fill="#6b7c93"
-    dominant-baseline="auto"
-    letter-spacing="0.5">fullstack</text>
-  <text x="196" y="35"
-    font-family="Arial, Helvetica, sans-serif"
-    font-weight="400"
-    font-size="8.5"
-    fill="#6b7c93"
-    dominant-baseline="auto"
-    letter-spacing="0.5">developer</text>
+  <!-- MÓVIL: símbolo + nombre compacto apilado -->
+  <g class="logo-mobile">
+    <polygon points="6,4 26,4 16,22"   fill="#20679e"/>
+    <polygon points="26,4 46,4 36,22"  fill="#20c5b5"/>
+    <polygon points="16,22 36,22 26,38" fill="#1aada0"/>
+    <circle cx="26" cy="22" r="6" fill="#ffffff"/>
+    <circle cx="26" cy="22" r="3" fill="#20c5b5"/>
+    <circle cx="6"  cy="4"  r="2" fill="#20679e"/>
+    <circle cx="46" cy="4"  r="2" fill="#20c5b5"/>
+    <circle cx="26" cy="38" r="2" fill="#1aada0"/>
+    <text x="56" y="19" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="15" fill="#1a2e45" letter-spacing="0.5">VICTORIA</text>
+    <rect x="56" y="22" width="86" height="1.8" fill="#20c5b5"/>
+    <text x="56" y="35" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="10" fill="#20679e" letter-spacing="1.8">PATARROYO</text>
+    <text x="56" y="47" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="7.5" fill="#8a9ab5" letter-spacing="0.8">fullstack developer</text>
+  </g>
 </svg>

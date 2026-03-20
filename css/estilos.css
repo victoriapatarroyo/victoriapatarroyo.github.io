@@ -23,26 +23,15 @@
   outline: none;
 }
 
-/* SVG logos navbar */
-.nav-logo-desktop,
-.nav-logo-mobile {
+/* Logo navbar */
+.nav-logo-img {
+  height: 48px;
+  width: auto;
   display: block;
   transition: opacity 0.2s;
 }
 
-/* Desktop: logo horizontal */
-.nav-logo-desktop {
-  height: 48px;
-  width: auto;
-}
-
-/* Móvil: oculto por defecto en desktop */
-.nav-logo-mobile {
-  display: none;
-}
-
-.nav-main .nav-logo:hover .nav-logo-desktop,
-.nav-main .nav-logo:hover .nav-logo-mobile {
+.nav-main .nav-logo:hover .nav-logo-img {
   opacity: 0.82;
 }
 
@@ -593,15 +582,8 @@
     z-index: 1000;
   }
 
-  /* Móvil: ocultar logo horizontal, mostrar compacto */
-  .nav-logo-desktop {
-    display: none;
-  }
-
-  .nav-logo-mobile {
-    display: block;
-    height: 52px;
-    width: auto;
+  .nav-logo-img {
+    height: 40px;
   }
 
   /* Mostrar hamburguesa */
@@ -660,8 +642,8 @@
     padding: 12px 24px;
   }
 
-  .nav-logo-desktop {
-    height: 42px;
+  .nav-logo-img {
+    height: 44px;
   }
 
   .nav-main .nav-links li a {
