@@ -23,14 +23,25 @@
   outline: none;
 }
 
-.nav-main .nav-logo img {
-  height: 120px;
-  width: auto;
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 6px 12px;
-  mix-blend-mode: multiply;
+/* SVG logos navbar */
+.nav-logo-svg {
   display: block;
+  transition: opacity 0.2s;
+}
+
+/* Desktop: logo horizontal */
+.nav-logo-desktop {
+  height: 48px;
+  width: auto;
+}
+
+/* Móvil: logo compacto — oculto por defecto */
+.nav-logo-mobile {
+  display: none;
+}
+
+.nav-main .nav-logo:hover .nav-logo-svg {
+  opacity: 0.82;
 }
 
 .nav-main .nav-links {
@@ -414,6 +425,23 @@
   pointer-events: none;
 }
 
+/* SVG logo footer */
+.footer-logo-svg {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+  margin-bottom: 16px;
+  transition:
+    filter 0.2s,
+    transform 0.2s;
+}
+
+.footer-logo-svg:hover {
+  transform: scale(1.04);
+  filter: drop-shadow(0 4px 12px rgba(32, 197, 181, 0.35));
+}
+
 .footer-tagline {
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.7);
@@ -563,8 +591,15 @@
     z-index: 1000;
   }
 
-  .nav-main .nav-logo img {
-    height: 72px;
+  /* Móvil: ocultar logo horizontal, mostrar compacto */
+  .nav-logo-desktop {
+    display: none;
+  }
+
+  .nav-logo-mobile {
+    display: block;
+    height: 52px;
+    width: auto;
   }
 
   /* Mostrar hamburguesa */
@@ -623,8 +658,8 @@
     padding: 12px 24px;
   }
 
-  .nav-main .nav-logo img {
-    height: 90px;
+  .nav-logo-desktop {
+    height: 42px;
   }
 
   .nav-main .nav-links li a {
