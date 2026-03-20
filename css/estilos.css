@@ -23,35 +23,24 @@
   outline: none;
 }
 
-/* Logo navbar — SVG inline */
-.nav-logo-svg {
-  height: 48px;
-  width: auto;
-  display: block;
+/* Logo navbar — tamaños responsivos */
+.nav-logo-desk,
+.nav-logo-mob {
   transition: opacity 0.2s;
 }
 
-.nav-main .nav-logo:hover .nav-logo-svg {
+.nav-logo-desk {
+  height: 44px;
+  width: auto;
+}
+.nav-logo-mob {
+  height: 48px;
+  width: auto;
+}
+
+.nav-main .nav-logo:hover .nav-logo-desk,
+.nav-main .nav-logo:hover .nav-logo-mob {
   opacity: 0.82;
-}
-
-/* En móvil: ocultar texto y tag, solo queda el diamante + nombre compacto */
-@media (max-width: 768px) {
-  .nav-logo-svg {
-    height: 40px;
-  }
-  .nav-text-tag {
-    display: none;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 960px) {
-  .nav-logo-svg {
-    height: 44px;
-  }
-  .nav-text-tag {
-    display: none;
-  }
 }
 
 .nav-main .nav-links {
@@ -601,10 +590,6 @@
     z-index: 1000;
   }
 
-  .nav-logo-svg {
-    height: 40px;
-  }
-
   /* Mostrar hamburguesa */
   .nav-hamburger {
     display: flex;
@@ -659,10 +644,6 @@
 @media (min-width: 769px) and (max-width: 960px) {
   .nav-main {
     padding: 12px 24px;
-  }
-
-  .nav-logo-svg {
-    height: 44px;
   }
 
   .nav-main .nav-links li a {
